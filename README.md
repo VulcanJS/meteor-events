@@ -8,6 +8,12 @@ Internal event tracking for Meteor apps
 
 `meteor-events` lets you easily track events in your Meteor app, storing them in an `Events.collection` collection. 
 
+This is different from libraries such as [analytics.js](http://segmentio.github.io/analytics.js/), which send your events to a third-party service. 
+
+`meteor-events`'s purpose is to centralize your events and send them to your own database, so you can use them in your app (for example, to count how many times a user has done an action). 
+
+Of course, you can then easily add a callback to *also* propagate the events you track to services like Mixpanel or Google Analytics. 
+
 ### Install
 
 `meteor add telescope:events`
