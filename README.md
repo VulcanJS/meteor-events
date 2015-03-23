@@ -56,3 +56,8 @@ Events.track({
   }
 })
 ```
+
+### Other Resources
+
+- https://github.com/keen/common-web
+- https://segment.com/libraries/analytics.js/
