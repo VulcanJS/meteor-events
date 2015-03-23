@@ -22,8 +22,11 @@ Events have the following properties:
 - `unique` (`Boolean`) [optional]: Whether the event is unique. Unique events can only be logged once. Defaults to `false`. 
 - `uniquePerUser` (`Boolean`) [optional]:  Whether the event is unique *per user*. Unique events can only be logged once per user. Defaults to `false`. 
 - `important` (`Boolean`) [optional]: Whether the event is important. Important events are never deleted. Defaults to `false`.
+- `type` (`String`): `client` or `server`. 
 - `userId` (`String`) [optional]: The `_id` of the user triggering the event, if available. Required if `uniquePerUser` is `true`. 
 - `properties` (`Object`) [optional]: The event's properties. 
+
+On the client, `userId` will default to `Meteor.userId()`. On the server, it needs to be specified. 
 
 ### Methods
 
