@@ -24,7 +24,7 @@ Events.track = function(event) {
       event.userId = Meteor.userId();
   }
 
-  if (_.isFunction(callbacks[event.name]))
+  if (_.isArray(callbacks[event.name]))
     _.each(callbacks[event.name], function(cb) {
       cb(event);
     });
