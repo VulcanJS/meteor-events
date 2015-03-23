@@ -29,7 +29,7 @@ Events.track = function(event) {
       cb(event);
     });
 
-  console.log(event);
+  Events.insert(event);
 };
 
 if (Meteor.isServer) {
