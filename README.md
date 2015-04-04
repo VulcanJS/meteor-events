@@ -44,6 +44,10 @@ On the client, `userId` will default to `Meteor.userId()`. On the server, it nee
 
 - `Events.onTrack(function (event) {...})`: declare a callback to execute whenever an event is tracked. 
 
+### Plugins
+
+Plugins can let you transparently extend the package with different analytics solutions. For example adding `events-ga` would propagate events to Google Analytics, `events-segmentio` would add Segment.io, and so on. 
+
 ### Example
 
 ```js
